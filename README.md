@@ -19,3 +19,6 @@ scrape_mars.py: declares a function called scrape to execute the Step 1 scraping
 app.py: creates an app route called /scrape that calls the scrape function and store data in Mongo database; creates a root route / that queries the Mongo database and pass the Mars data into an HTML template to display the data.
 
 index.html: a template HTML file that displays the above outputs in the appropriate HTML elements.
+<img width="1433" alt="screenshot_one" src="https://user-images.githubusercontent.com/54033512/69487436-6638e080-0e1f-11ea-8cca-7fe3ac487a35.png">
+<img width="1357" alt="screen_shot_two" src="https://user-images.githubusercontent.com/54033512/69487442-7fda2800-0e1f-11ea-84e0-14814dd46bbc.png">
+<img width="1353" alt="screen_shot_three" src="https://user-images.githubusercontent.com/54033512/69487445-836daf00-0e1f-11ea-88d7-1d0cc020912d.png">
