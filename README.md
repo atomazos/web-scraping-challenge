@@ -8,7 +8,8 @@ I built a cool web app that scrapes various websites that contains data related 
 * The Mars Facts webpage.
 * The Mars hemispheres images from the USGS Astrogeology site.
 
-With the scrape_mars.py file, I pythonically (yes, that's a word, for the uninitiated) coded a function declaration called "scrape" to execute the above web scraping, which returns one Python dictionary containing all of the scraped data. Then, in the app.py file, I coded an app route called "/scrape" that basically calls the "scrape"function and stores the data into a Mongo database, which creates a root route / that queries the Mongo database and passes the Mission to Mars data into an HTML template to display the data.
+With the scrape_mars.py file, I pythonically (yes, that's a word, for the uninitiated) declared a function called "scrape" to execute the above web scraping, which returns one Python dictionary containing all of the scraped data. Then, in the app.py file, I coded an app route called "/scrape" that basically calls the "scrape" function and stores the data into a Mongo database. The app.py file also includes a root route / that queries the Mongo database and passes the Mission to Mars data into an HTML template to display the data.
+Click on the images below for a larger view.
 
 
 ### Webpage Screenshots
