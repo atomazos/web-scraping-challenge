@@ -1,6 +1,6 @@
 # web-scraping-challenge
 
-I built a cool web app that scrapes various websites that has data related to the Mission to Mars and displays the information in a single HTML page. With Jupyter Notebook, I used the BeautifulSoup, Pandas, and Splinter Python libraries to scrape the following websites:
+I built a cool web app that scrapes various websites that contains data related to the Mission to Mars and displays the information in a single HTML page. With Jupyter Notebook, I used the BeautifulSoup, Pandas, and Splinter Python libraries to scrape the following websites:
 
 * The latest news title and paragraph text from the NASA Mars News Site.
 * The image url for the featured Mars image from JPL Featured Space Image.
