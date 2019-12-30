@@ -1,24 +1,15 @@
 # web-scraping-challenge
-## Mission to Mars
 
-Building a web application that scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.
+I built a cool web app that scrapes various websites that has data related to the Mission to Mars and displays the information in a single HTML page. With Jupyter Notebook, I used the BeautifulSoup, Pandas, and Splinter Python libraries to scrape the following websites:
 
-## Step 1: Scraping
-mission_to_mars.ipynb: the Jupyter Notebook file that outlines all the scraping. Python libraries used: BeautifulSoup, Pandas, and Splinter
+* The latest news title and paragraph text from the NASA Mars News Site.
+* The image url for the featured Mars image from JPL Featured Space Image.
+* The latest Mars weather tweet from the Mars Weather twitter account.
+* The Mars Facts webpage.
+* The Mars hemispheres images from the USGS Astrogeology site.
 
-Scrape latest news title and paragraph text from the NASA Mars News Site.
-Scrape the image url for the featured Mars image from JPL Featured Space Image.
-Scrape the latest Mars weather tweet from the Mars Weather twitter account.
-Scrape the Mars Facts webpage.
-Scrape Mars hemispheres images from the USGS Astrogeology site.
+With the scrape_mars.py file, I pythonically (yes, that's a word, for the uninitiated) coded a function declaration called "scrape" to execute the above web scraping, which returns one Python dictionary containing all of the scraped data. Then, in the app.py file, I coded an app route called "/scrape" that basically calls the "scrape"function and stores the data into a Mongo database, which creates a root route / that queries the Mongo database and passes the Mission to Mars data into an HTML template to display the data.
 
-## Step 2:MongoDB and Flask Application
-
-scrape_mars.py: declares a function called scrape to execute the Step 1 scraping and returns the scraped data.
-
-app.py: creates an app route called /scrape that calls the scrape function and store data in Mongo database; creates a root route / that queries the Mongo database and pass the Mars data into an HTML template to display the data.
-
-index.html: a template HTML file that displays the above outputs in the appropriate HTML elements.
 
 ### Webpage Screenshots
 
